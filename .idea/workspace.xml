@@ -24,7 +24,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHubDesktop/GitHubDesktop.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Barbershop/Barbershop/catalog.html" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -51,6 +51,11 @@
       <updated>1577621164902</updated>
       <workItem from="1577621166133" duration="5353000" />
       <workItem from="1577628607137" duration="3583000" />
+      <workItem from="1577985136332" duration="115000" />
+      <workItem from="1577986136191" duration="2238000" />
+      <workItem from="1577989598222" duration="715000" />
+      <workItem from="1578420078709" duration="14000" />
+      <workItem from="1578425268072" duration="1269000" />
     </task>
     <servers />
   </component>

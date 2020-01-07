@@ -7,7 +7,7 @@
 <body>
     <header class="main-header">
         <a class="main-header-logo" href="index.html">
-            <   img src="img/logo.svg" width="1440" height="545" alt="Логотип дизайн-студии Nerds">
+            <img src="img/logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
         </a>
         <nav class="main-navigation">
             <ul class="site-navigation">
@@ -31,16 +31,19 @@
             <h2 class="visually-hidden">Наши услуги</h2>
             <ul class="features-list">
                 <li>
+                    <img src="img/illustration-1.jpg.jpg" width="300" height="146">
                     <h2>Веб-сайты</h2>
                     <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                     <a class="botton" href="#">ЗАКАЗАТЬ</a>
                 </li>
                 <li>
+                    <img src="img/illustration-2.jpg.jpg" width="300" height="146">
                     <h2>Приложения</h2>
                     <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                     <a class="botton" href="#">ЗАКАЗАТЬ</a>
                 </li>
                 <li>
+                    <img src="img/illustration-3.jpg.jpg" width="300" height="146">
                     <h2>Презентации</h2>
                     <p>Вы даже не подозреваете,
                         насколько вы изумительны!</p>
@@ -65,7 +68,7 @@
             </div>
             <aside class="studio-stats">
                 <div class="logo-wrapper">
-                    <img src="nerds-illustration.jpg" width="360" height="208" alt="Логотип дизайн-студии Nerds">
+                    <img src="img/nerds-illustration.jpg.png" width="360" height="208" alt="Логотип дизайн-студии Nerds">
                 </div>
                 <em>с 2004 года Любим точность во всем:</em>
                 <ul>
@@ -88,10 +91,10 @@
         <section class="partners">
             <h2 class="visually-hidden">Наши партнёры</h2>
             <ul class="partners-list">
-                <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="partners-logo-1" width="199" height="68" alt="HTML Academy"></a></li>
-                <li><a href="#"><img src="partners-logo-2" width="199" height="68" alt="Barbersop Borodinski"></a></li>
-                <li><a href="#"><img src="partners-logo-3" width="199" height="68" alt="Pink"></a></li>
-                <li><a href="#"><img src="partners-logo-4" width="199" height="68" alt="Mishka"></a></li>
+                <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/partners-logo-1.png" width="199" height="68" alt="HTML Academy"></a></li>
+                <li><a href="#"><img src="img/partners-logo-2.png" width="199" height="68" alt="Barbersop Borodinski"></a></li>
+                <li><a href="#"><img src="img/partners-logo-3.png" width="199" height="68" alt="Pink"></a></li>
+                <li><a href="#"><img src="img/partners-logo-4.png" width="199" height="68" alt="Mishka"></a></li>
             </ul>
         </section>
     </main>
@@ -127,7 +130,21 @@
 
     <section class="modal-email-us">
         <h2>Напишите нам</h2>
-        <!-- Здесь будет форма -->
+        <form class="email-us-form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="user-name-field">
+                Ваше имя:
+                <input type="text" name="user-name" id="user-name-field" placeholder="Имя Фамилия">
+            </label>
+            <label for="user-email-field">
+                Ваш e-mail:
+                <input type="email" name="user-email" id="user-email-field" placeholder="email@example.com">
+            </label>
+            <label for="email-content-field">
+                Текст письма:
+                <textarea name="email-content" id="email-content-field" placeholder="В свободной форме" rows="4"></textarea>
+            </label>
+            <button class="button" type="submit"></button>
+        </form>
     </section>
 </body>
 </html>
