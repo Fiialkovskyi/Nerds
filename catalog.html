@@ -28,8 +28,66 @@
         <section class="catalog">
             <aside class="catalog-filter">
                 <h2 class="vissualy-hidden">Фильтр товаров</h2>
-                <h3>СТОИМОСТЬ</h3>
-                <!-- Здесь будет форма -->
+                <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+                    <fieldset>
+                        <!-- Нужно доработать -->
+                        <legend>Стоимость</legend>
+                        <label for="price-range-field">
+                            <input type="range" name="price-ranfe" min="0" max="15000" id="price-range-field">
+                        </label>
+                        <label for="price-from-field">
+                           ОТ
+                            <output name="price-from" id="price-from-field"></output>
+                        </label>
+                        <label for="price-to-field">
+                            ОТ
+                            <output name="price-from" id="price-to-field"></output>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Сетка:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="vissualy-hidden filter-input filter-input-radio" type="radio" name="type-of-grid" value="adaptive-grid" id="filter-adaptive-grid">
+                                <label for="filter-adaptive-grid">Адаптивная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="vissualy-hidden filter-input filter-input-radio" type="radio" name="type-of-grid" value="fixed-grid" id="filter-fixed-grid">
+                                <label for="filter-fixed-grid">Фиксированная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="vissualy-hidden filter-input filter-input-radio" type="radio" name="type-of-grid" value="elastic-grid" id="filter-elastic-grid">
+                                <label for="filter-elastic-grid">Резиновая</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>ОСОБЕННОСТИ:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                                <label for="filter-slider">Слайдер</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-block" id="filter-features-block">
+                                <label for="filter-features-block">Блок преимуществ</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                                <label for="filter-news">Новости</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="field-gallery">
+                                <label for="field-gallery">Галерея</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="vissually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart" id="cart-field">
+                                <label for="cart-field">Корзина</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="button filter-button" type="submit">ПОКАЗАТЬ</button>
+                </form>
             </aside>
         </section>
 
