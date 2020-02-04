@@ -24,7 +24,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Barbershop/Barbershop/catalog.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -57,6 +57,8 @@
       <workItem from="1578420078709" duration="14000" />
       <workItem from="1578425268072" duration="1269000" />
       <workItem from="1578510421752" duration="3073000" />
+      <workItem from="1580542095208" duration="27000" />
+      <workItem from="1580837484961" duration="681000" />
     </task>
     <servers />
   </component>
