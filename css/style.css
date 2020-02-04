@@ -1,0 +1,58 @@
+/* Задаем базовые стили */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color:#000000;
+
+    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Размечаем шапку */
+
+.main-header {
+    background-color: #eeeeee;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.site-navigation,
+.cart {
+    list-style: none;
+}
+
+.site-navigation a,
+.cart a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.cart a:hover {
+    color: #fb565a;
+}
+
+.site-navigation a:active,
+.cart a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+.site-navigation-current a{
+    border-bottom: 2px solid #fb565a;
+}
+
+/* Размечаем основной контент сраницы */
+
