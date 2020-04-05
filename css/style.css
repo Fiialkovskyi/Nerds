@@ -17,6 +17,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -44,17 +49,21 @@ a {
 .button-gray,
 .button-red-email{
     display: inline-block;
-
-    width: 240px;
-    height: 50px;
-
-    line-height: 50px;
+    padding: 16px 0;
+    font-size: 16px;
+    line-height: 18px;
     text-align: center;
-    vertical-align: middle;
     text-transform: uppercase;
     color: #ffffff;
-
     border-radius: 2px;
+}
+
+.slider-button {
+    width: 240px;
+}
+
+.features-button {
+    width: 160px;
 }
 
 .button-red:active,
@@ -227,7 +236,7 @@ a {
 
 .slider-controls {
     position: absolute;
-    bottom: 97px;
+    bottom: 96px;
     left: 50%;
 
     margin-left: -44px;
@@ -298,7 +307,7 @@ a {
 .slide .slide-title {
     padding: 0;
     margin: 0;
-    padding-top: 79px;
+    padding-top: 78px;
     font-size: 55px;
     font-weight: 500;
     line-height: 55px;
@@ -340,8 +349,6 @@ a {
 
 .features-list {
     display: flex;
-    justify-content: space-between;
-
     margin: 0;
     margin-bottom: 80px;
     padding: 0;
@@ -350,21 +357,46 @@ a {
 }
 
 .feature-item {
+    margin: 0;
+    margin-right: 100px;
+    padding: 0;
     width: 300px;
 }
 
-.feature-item img {
+.feature-item:last-child {
+    margin-right: 0;
+}
 
+.feature-item img {
+    margin: 0;
+    padding: 0;
+
+    width: 300px;
+    height: 146px;
 }
 
 .feature-item h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 18px;
+
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
 }
 .feature-item p {
+    margin: 0;
+    padding: 0;
+    padding-top: 16px;
+
+    max-width: 260px;
+
     color: #283136;
+}
+
+.feature-item a {
+    margin-top: 32px;
 }
 
 .about-us {
