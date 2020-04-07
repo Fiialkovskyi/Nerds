@@ -39,12 +39,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.catalog.html">
+    <configuration name="catalog.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Nerds/catalog.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Nerds/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.catalog.html" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -86,7 +90,8 @@
       <workItem from="1586167470124" duration="4774000" />
       <workItem from="1586172293223" duration="82000" />
       <workItem from="1586172544361" duration="579000" />
-      <workItem from="1586173185890" duration="2949000" />
+      <workItem from="1586173185890" duration="6743000" />
+      <workItem from="1586245534401" duration="888000" />
     </task>
     <servers />
   </component>
