@@ -48,8 +48,7 @@ input[type="radio"].visually-hidden {
 .button-red,
 .button-green,
 .button-yellow,
-.button-gray,
-.button-red-email{
+.button-gray {
     display: inline-block;
     padding: 16px 0;
     font-size: 16px;
@@ -789,6 +788,17 @@ input[type="radio"].visually-hidden {
 
 /* --- Разметка фильтра товаров --- */
 
+.catalog-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog-wrapper aside {
+    width: 260px;
+}
+
 .filter-item {
     margin: 0;
     padding: 0;
@@ -1007,6 +1017,235 @@ input[type="radio"].visually-hidden {
 .filter-input-radio + label:disabled::after,
 .filter-input-checkbox + label:disabled::after{
     opacity: 0.1;
+}
+
+.catalog {
+    width: 760px;
+}
+
+.sort-by {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.sort-by p {
+    margin: 0;
+    margin-right: auto;
+
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sort-by-type,
+.sort-by-direction {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.sort-by li {
+    margin: 0;
+    padding: 0;
+}
+
+
+.sort-by a {
+    display: block;
+
+
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.sort-by-type {
+    justify-content: flex-end;
+    margin-right: 47px;
+}
+
+.sort-by-type li {
+    padding-left: 25px;
+}
+
+.sort-by-type a {
+    opacity: 0.3;
+}
+
+.sort-by-type a:hover {
+    opacity: 0.6;
+}
+
+.sort-by-direction {
+    margin: 0 1px;
+}
+
+.sort-by-direction li:first-child {
+    margin-right: 18px;
+}
+
+.sort-by-direction a {
+    opacity: 0.2;
+}
+
+.sort-by-direction a:hover {
+    opacity: 0.5;
+}
+
+.sort-by-active a,
+.sort-by-type a:active,
+.sort-by-direction a:active{
+    opacity: 1;
+}
+
+.catalog-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0;
+    margin-top: 57px;
+
+    list-style: none;
+}
+
+.catalog-item  {
+    position: relative;
+    margin: 0;
+    margin-bottom: 33px;
+    padding: 0;
+
+    width: 360;
+    height: 616px;
+
+    border-radius: 3px;
+}
+
+.catalog-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 40px;
+    background-image: url("../img/browser.svg");
+    background-repeat: no-repeat;
+    opacity: 0.12;
+}
+
+.catalog-item:hover::before {
+    opacity: 1;
+}
+
+.catalog-item img {
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+
+    width: 360px;
+    height: 576px;
+}
+
+.catalog-item-popup {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    margin: 0;
+    padding-top: 28px;
+    padding-bottom: 43px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    text-align: center;
+
+    background-color: #eeeeee;
+}
+
+.catalog-item-popup a {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.catalog-item-popup p {
+    margin: 0;
+    margin-top: 15px;
+
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.catalog-item-popup .catalog-button {
+    margin-top: 30px;
+    padding: 16px 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.catalog-item:hover {
+
+}
+
+.catalog-item:hover .catalog-item-popup {
+    display: block;
+
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 27px;
+    margin-bottom: 60px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0;
+    margin-right: 11px;
+    padding: 0;
+}
+
+.pagination-item a {
+    display: block;
+    padding: 16px 21px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+
+    border-radius: 2px;
+    background-color: #eeeeee;
+}
+
+.pagination-item-active a {
+    box-shadow: inset 0 0 0 3px #dbdbdb;
+    background-color: #ffffff;
+}
+
+.pagination-item-next a{
+    padding-left: 79px;
+    padding-right: 79px;
 }
 /* ----- Модальное окно ----- */
 
