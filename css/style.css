@@ -72,15 +72,26 @@ input[type="radio"].visually-hidden {
     width: 219px;
     border: none;
     border-radius: 2px;
-    outline: none;
 }
 
 .filter-button {
     margin-top: 1px;
     margin-bottom: 20px;
     width: 260px;
-    outline: none;
     border: none;
+    border-radius: 2px;
+}
+
+.button-email {
+    width: 260px;
+    border: none;
+    border-radius: 2px;
+}
+
+.map-button:active,
+.filter-button:active,
+.button-email:active {
+    outline: none;
 }
 
 .button-red:active,
@@ -1250,5 +1261,129 @@ input[type="radio"].visually-hidden {
 /* ----- Модальное окно ----- */
 
 .modal-email-us {
-    display: none;
+    /display: none;
+    position: fixed;
+    bottom: 180px;
+    left: 50%;
+
+    margin: 0;
+    margin-left: -480px;
+    padding: 0;
+    padding-bottom: 84px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+
+    z-index: 1;
+}
+
+.modal-email-us-wrapper {
+    width: 760px;
+}
+
+.modal-email-us h2 {
+    margin: 0;
+    margin-top: 67px;
+    margin-bottom: 41px;
+    padding: 0;
+
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.name-email-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+}
+
+.email-us-form p {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.email-us-form label {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.email-us-form input,
+.email-us-form textarea {
+    box-sizing: border-box;
+    font: inherit;
+    margin-top: 9px;
+    color: #444444;
+    border: 2px solid #d7dcde;
+    border-radius: 2px;
+}
+
+.email-us-form input {
+    width: 360px;
+    padding-left: 13px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.email-us-form textarea {
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 13px;
+}
+
+.email-us-form .button-email {
+    margin-top: 47px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 89px;
+    top: 78px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    border: none;
+    background-color: #ffffff;
+
+}
+
+.modal-close::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -2px;
+    width: 27px;
+    height: 4px;
+    background-color: #fb565a;
+    opacity: 0.3;
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -2px;
+    width: 27px;
+    height: 4px;
+    background-color: #fb565a;
+    opacity: 0.3;
+    transform: rotate(-45deg);
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after {
+    opacity: 1;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+    opacity: 0.1;
 }

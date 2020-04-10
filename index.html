@@ -192,22 +192,27 @@
     </footer>
 
     <section class="modal-email-us">
-        <h2>Напишите нам</h2>
-        <form class="email-us-form" action="https://echo.htmlacademy.ru" method="post">
-            <label for="user-name-field">
-                Ваше имя:
-                <input type="text" name="user-name" id="user-name-field" placeholder="Имя Фамилия">
-            </label>
-            <label for="user-email-field">
-                Ваш e-mail:
-                <input type="email" name="user-email" id="user-email-field" placeholder="email@example.com">
-            </label>
-            <label for="email-content-field">
-                Текст письма:
-                <textarea name="email-content" id="email-content-field" placeholder="В свободной форме" rows="4"></textarea>
-            </label>
-            <button class="button" type="submit"></button>
-        </form>
+        <div class="modal-email-us-wrapper">
+            <h2>Напишите нам</h2>
+            <form class="email-us-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="name-email-wrapper">
+                    <p>
+                        <label for="user-name-field">Ваше имя:</label>
+                        <input type="text" name="user-name" id="user-name-field" placeholder="Имя Фамилия">
+                    </p>
+                    <p>
+                        <label for="user-email-field">Ваш e-mail:</label>
+                        <input type="email" name="user-email" id="user-email-field" placeholder="email@example.com">
+                    </p>
+                </div>
+                <p>
+                    <label for="email-content-field">Текст письма:</label>
+                    <textarea name="email-content" id="email-content-field" placeholder="В свободной форме" rows="4"></textarea>
+                </p>
+                <button class="button-red button-email" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
+        </div>
     </section>
 </body>
 </html>
