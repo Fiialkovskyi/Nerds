@@ -1,1 +1,1 @@
-# Nerds
+https://fiialkovskyi.github.io/Nerds/.
